@@ -34,11 +34,16 @@ export default {
 
 <template>
     <main>
-        <div class="container">
+        
+        <div class="bg-top">
+            <div class="container">
             <div class="jumbotron">
                 content qui
-            </div>
-
+            </div>              
+        </div>
+        </div>
+        <div class="bg-bot">
+            <div class="container">
             <div class="bg-blue">
                 <ul class="list-unstyled">
                     <li v-for ="(singleImg ,i) in dataImg">
@@ -51,7 +56,7 @@ export default {
                     </li>
                 </ul>
             </div>
-            
+        </div>
         </div>
         
     </main>
@@ -60,6 +65,13 @@ export default {
 <style lang="scss" scoped>
 @use  "../assets/scss/partials/mixins.scss" as *;
 main{
+    .bg-top{
+        background-color: #1C1C1C
+    }
+    .bg-bot{
+        background-color: #0282F9
+    }
+    
     // @include my-container
     .container{
         @include my-container ;
@@ -110,5 +122,6 @@ main{
         
         
 }
+
 
 </style>
