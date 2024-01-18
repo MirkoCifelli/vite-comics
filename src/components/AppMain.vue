@@ -64,12 +64,14 @@ export default {
 
 <style lang="scss" scoped>
 @use  "../assets/scss/partials/mixins.scss" as *;
+@use  "../assets/scss/main.scss" as *;
+
 main{
     .bg-top{
         background-color: #1C1C1C
     }
     .bg-bot{
-        background-color: #0282F9
+        background-color: $bg-blue
     }
     
     // @include my-container
@@ -78,7 +80,7 @@ main{
         .jumbotron{
         width: 100%;
         height: 120px;
-        background-color: #1C1C1C;
+        // background-color: #1C1C1C;
         padding: 20px;
         text-align: center;
         color: white;
@@ -88,7 +90,7 @@ main{
         width: 100%;
         height: 100px;
         padding: 20px;
-        background-color: #0282F9;
+        // background-color: #0282F9;
         }
         .list-unstyled{
             list-style: none;

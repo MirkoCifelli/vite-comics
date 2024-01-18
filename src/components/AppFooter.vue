@@ -4,21 +4,50 @@ export default {
         return {
             dataFooterImg:[
                 {
-                    img:'../../public/img/footer-facebook.png'
+                    img:'/img/footer-facebook.png'
                 },
                 {
-                    img:'../../public/img/footer-twitter.png'
+                    img:'/img/footer-twitter.png'
                 },
                 {
-                    img:'../../public/img/footer-youtube.png'
+                    img:'/img/footer-youtube.png'
                 },
                 {
-                    img:'../../public/img/footer-pinterest.png'
+                    img:'/img/footer-pinterest.png'
                 },
                 {
-                    img:'../../public/img/footer-periscope.png'
+                    img:'/img/footer-periscope.png'
                 }
-            ]
+            ],
+        //     dataFooterObj:[
+        //     {
+        //         stringa: 'DC COMICS',
+        //     },
+        //     {
+        //         stringa: 'Character',
+        //     },
+        //     {
+        //         stringa: 'Comics',
+        //     },
+        //     ,
+        //     {
+        //         stringa: 'Movier',
+        //     },
+        //     ,
+        //     {
+        //         stringa: 'TV',
+        //     },
+        //     {
+        //         stringa: 'Games',
+        //     },
+        //     ,
+        //     {
+        //         stringa: 'Videos',
+        //     },
+        //     {
+        //         stringa: 'News',
+        //     }
+        // ]
 
         };
     },
@@ -30,7 +59,8 @@ export default {
 
 <template>
     <footer>
-        <div class="container">
+        <div class="bg-special">
+            <div class="container">
             <div class="footer-top">
                 <div>
                     <ul>
@@ -134,10 +164,24 @@ export default {
                         
                     </ul>
                 </div>
+                <!-- <div>
+                    <ul>
+                        <li v-for="(singlePost , k) in dataFooterObj">
+                            <span>
+                                {{ singlePost.stringa }}
+                            </span>
+                        </li>
+                    </ul>
+                </div> -->
                 <div class="img-dc">
                     <img src="../../public/img/dc-logo-bg.png" alt="">
                 </div>
             </div>
+            
+        </div>
+        </div>
+        <div class="bg-bot">
+            <div class="container">
             <div class="footer-botton">
                 <div class="button">
                     SING-UP NOW!
@@ -154,6 +198,7 @@ export default {
                 </div>
             </div>
         </div>
+        </div>
     </footer>
 </template>
 
@@ -161,14 +206,20 @@ export default {
 @use  "../assets/scss/partials/mixins.scss" as *;
 
 footer{
+    .bg-special{
+        background-image: url(../../public/img/footer-bg.jpg);
+    }
+    .bg-bot{
+        background-color: #1C1C1C
+    }
     .container{
         @include my-container ;
         .footer-top{
             height: 300px;
-            background-image: url(../../public/img/footer-bg.jpg);
+            // background-image: url(../../public/img/footer-bg.jpg);
             overflow: hidden;
             display: flex;
-            // align-items: center;
+            // align-simglePost: center;
             // justify-content: space-around;
             padding: 20px;
             .img-dc{
@@ -199,7 +250,7 @@ footer{
             display: flex;
             justify-content: space-between;
             height: 100px;
-            background-color: #1C1C1C;
+            // background-color: #1C1C1C;
             padding: 20px;
             .button {
                 background-color: #1C1C1C;
