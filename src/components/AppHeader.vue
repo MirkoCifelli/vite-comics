@@ -60,10 +60,11 @@ export default {
     </header>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use  "../assets/scss/partials/mixins.scss" as *;
 
-.container{
+header{
+    .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,5 +90,6 @@ li{
 }
 .list-unstyled{
     list-style: none;
+}
 }
 </style>
