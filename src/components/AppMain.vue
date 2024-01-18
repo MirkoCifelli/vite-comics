@@ -31,20 +31,23 @@ export default {
 @use  "../assets/scss/partials/mixins.scss" as *;
 main{
     // @include my-container
-    .jumbotron{
-    width: 100%;
-    height: 120px;
-    background-color: #1C1C1C;
-    padding: 20px;
-    text-align: center;
-    color: white;
+    .container{
+        @include my-container
     }
-    .bg-glue{
-    width: 100%;
-    height: 300px;
-    padding: 20px;
-    background-color: #0282F9;
-    }
+        .jumbotron{
+        width: 100%;
+        height: 120px;
+        background-color: #1C1C1C;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        }
+        .bg-glue{
+        width: 100%;
+        height: 300px;
+        padding: 20px;
+        background-color: #0282F9;
+        }
 }
 
 </style>
