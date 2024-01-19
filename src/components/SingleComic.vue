@@ -28,11 +28,12 @@ export default {
 <style lang="scss" scoped>
 
         .box-comic-img{
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
             img{
                 width: 100%;   
                 height: 100%;
+                
             }
         }
         .single-comic{

@@ -124,7 +124,7 @@ export default {
                     :title="singleComicPost.series"
                     :image="singleComicPost.thumb"/>
                 </div>  
-                <div class="margin-top">
+                <div class="text-align">
                     <button class="button-special">
                         Load More
                     </button>
@@ -191,6 +191,10 @@ main{
             flex-wrap: wrap;
             padding-top: 40px;   
         }
+        .text-align{
+            text-align: center;
+            padding-bottom: 20px;
+        }
         .button-special {
                 background-color: #0282F9;
                 border: none;
@@ -201,9 +205,7 @@ main{
                 font-size: 16px;    
                 text-transform: uppercase;
                 font-weight: bold;
-                position: absolute;
-                bottom: -8%;
-                right: 50%;
+                
                
             }  
 
