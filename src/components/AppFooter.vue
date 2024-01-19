@@ -174,7 +174,7 @@ export default {
                     </ul>
                 </div> -->
                 <div class="img-dc">
-                    <img src="../../public/img/dc-logo-bg.png" alt="">
+                    <img src="/img/dc-logo-bg.png" alt="">
                 </div>
             </div>
             
@@ -241,9 +241,11 @@ footer{
                 text-transform: uppercase;
                 margin-bottom: 20px;
                 margin-top: 20px;
+               
                 }
                 color: darkgrey;
                 font-size: 11px;
+                
             }
         }
         .footer-botton{

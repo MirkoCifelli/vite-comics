@@ -52,7 +52,9 @@ export default {
             <nav> 
                 <ul class="list-unstyled">
                     <li v-for="(item,i) in navBar">
-                        {{ item.navLink }}
+                        <a href="#">
+                            {{ item.navLink }}
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -81,11 +83,17 @@ ul{
 }
 li{
     padding: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
+    
     &:hover{
-        color: blue;
+        
         border-bottom: 10px solid blue;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+        
     }
 }
 .list-unstyled{
