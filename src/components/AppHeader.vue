@@ -5,34 +5,44 @@ export default {
         return {
             navBar:[
                 {
-                navLink: 'Character'
+                navLink: 'Character',
+                link:'#'
             },
             {
-                navLink: 'Comics'
+                navLink: 'Comics',
+                link:'#'
             },
             {
-                navLink: 'Movie'
+                navLink: 'Movie',
+                link:'#'
             },
             {
-                navLink: 'Tv'
+                navLink: 'Tv',
+                link:'#'
             },
             {
-                navLink: 'Games'
+                navLink: 'Games',
+                link:'#'
             },
             {
-                navLink: 'Collectibles'
+                navLink: 'Collectibles',
+                link:'#'
             },
             {
-                navLink: 'Videos'
+                navLink: 'Videos',
+                link:'#'
             },
             {
-                navLink: 'Fans'
+                navLink: 'Fans',
+                link:'#'
             },
             {
-                navLink: 'News'
+                navLink: 'News',
+                link:'#'
             },
             {
-                navLink: 'Shop'
+                navLink: 'Shop',
+                link:'#'
             }
         ],
         };
@@ -52,7 +62,7 @@ export default {
             <nav> 
                 <ul class="list-unstyled">
                     <li v-for="(item,i) in navBar">
-                        <a href="#">
+                        <a :href="item.link">
                             {{ item.navLink }}
                         </a>
                     </li>
